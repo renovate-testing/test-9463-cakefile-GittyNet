@@ -27,6 +27,14 @@
     <None Remove="Test\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="packageicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packageicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="PeghCore" Version="2.0.610.1058" />
   </ItemGroup>
 </Project>
