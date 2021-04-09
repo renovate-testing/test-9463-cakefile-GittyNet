@@ -26,8 +26,9 @@ namespace Aspenlaub.Net.GitHub.CSharp.GittyNet.Test {
         [TestMethod]
         public void GlobalDotNetCakeIsInstalled() {
             var errorsAndInfos = new ErrorsAndInfos();
-            Assert.IsTrue(Sut.IsGlobalDotNetCakeInstalled(errorsAndInfos));
+            var isInstalled = Sut.IsGlobalDotNetCakeInstalled(errorsAndInfos);
             Assert.IsFalse(errorsAndInfos.AnyErrors(), errorsAndInfos.ErrorsToString());
+            Assert.IsTrue(isInstalled);
         }
     }
 }
