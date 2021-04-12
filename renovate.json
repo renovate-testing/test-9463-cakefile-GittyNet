@@ -1,0 +1,6 @@
+{
+  "cake": {
+    "enabled": true
+  },
+  "enabledManagers": ["cake"]
+}
